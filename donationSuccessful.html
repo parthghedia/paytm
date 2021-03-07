@@ -260,22 +260,29 @@
         </table>
 	</div>
     
-    
+
 </div>
     <script>
         var db = firebase.firestore();
             var uid;
-            hello();
-    
-        async function hello(){
+        
+    console.log('in bill.html');
+        async function bill(){
         await firebase.auth().onAuthStateChanged( async (user) => {
                  if (user)  {
                     uid = user.uid;
                     console.log(uid);
                     console.log('uid print');
                  
-        }});
+        }
+    else{
+        console.log("no user");
+    }
+    });
                 }
+
+        bill();        
+        console.log('called bill func');
     </script>
     
 </body>
