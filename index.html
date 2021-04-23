@@ -1,72 +1,41 @@
 <html>
-
-<body>
-    <div class="landing red">
-        <iframe src="/landing-animation" class="landing__animation" style="height: 100vw; width: 100vw;">
-
+    <head>
+        <style
         
-            #document 
-            <!DOCTYPE html>
-            <html><head><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
-                <meta charset="UTF-8">
-                <meta name="authoring-tool" content="Adobe_Animate_CC">
-                <title>PeriodAnim</title>
-                <!-- write your code here -->
-                <style>
-                  #animation_container {
-                    position:absolute;
-                    margin:auto;
-                    left:0;right:0;
-                    top:0;bottom:0;
-                  }
-                </style>
-                <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-                <script src="PeriodAnim.js"></script>
-                <script>
-                var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
-                function init() {
-                    canvas = document.getElementById("canvas");
-                    anim_container = document.getElementById("animation_container");
-                    dom_overlay_container = document.getElementById("dom_overlay_container");
-                    var comp=AdobeAn.getComposition("61C6914CC9162B40BAF64D1BF7D1B9E6");
-                    var lib=comp.getLibrary();
-                    handleComplete({},comp);
-                }
-                function handleComplete(evt,comp) {
-                    //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
-                    var lib=comp.getLibrary();
-                    var ss=comp.getSpriteSheet();
-                    exportRoot = new lib.PeriodAnim();
-                    stage = new lib.Stage(canvas);
-                    //Registers the "tick" event listener.
-                    fnStartAnimation = function() {
-                        stage.addChild(exportRoot);
-                        createjs.Ticker.framerate = lib.properties.fps;
-                        createjs.Ticker.addEventListener("tick", stage);
-                    }
-                    //Code to support hidpi screens and responsive scaling.
-                    AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);
-                  AdobeAn.compositionLoaded(lib.properties.id);
-                
-                  window.parent.postMessage("readytoplay", "/")
-                
-                    fnStartAnimation();
-                }
-                </script>
-                <!-- write your code here -->
-                </head>
-                <body onload="init();" style="margin:0px;" data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed="">
-                    <div id="animation_container" style="background-color: rgb(255, 255, 255); width: 722px; height: 722px;">
-                        <canvas id="canvas" width="902" height="902" style="position: absolute; display: block; background-color: rgb(255, 255, 255); width: 722px; height: 722px;"></canvas>
-                        <div id="dom_overlay_container" style="pointer-events: none; overflow: hidden; width: 722px; height: 722px; position: absolute; left: 0px; top: 0px; display: block;">
-                        </div>
-                    </div>
-                
-                
-                </body></html>
-        </iframe>
 
-        <div class="landing__text">
+ 
+        id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+<body data-new-gr-c-s-check-loaded="14.1007.0" data-gr-ext-installed class="disable-scroll">
+    <div class="landing red">
+        <iframe src="/landing-animation" class="landing__animation" style="height: 100vw; width: 100vw; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 88vh;
+            width: 100%;
+            margin-top: -62px;
+            padding: 2rem 2.25rem 0;
+            background: #ef4036;
+            box-shadow: 0 4px 3px rgb(50 50 50 / 10%);
+            overflow: hidden;
+            transition: transform .8s ease;
+        "></iframe>
+          <div class="landing__text"  style="position: relative;
+          font-size: 2.375rem;
+          transform: translateY(-2rem);
+          z-index: 1;
+          margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;">
             <h1>A global non-profit<br>
                 organization fighting<br>
                 to end period poverty<br>
